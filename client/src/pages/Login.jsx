@@ -9,7 +9,6 @@ import { GoogleLogin } from "@react-oauth/google";
 const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
 
 const Login = () => {
-  const [token, setToken] = useState(localStorage.getItem("token"));
   const [msg, setMsg] = useState("");
   const navigate = useNavigate();
 
