@@ -4,7 +4,7 @@ import Form from "react-bootstrap/Form";
 import Card from "react-bootstrap/Card";
 import axios from "axios";
 import { useNavigate, Link } from "react-router-dom";
-import { GoogleLogin, GoogleOAuthProvider } from "@react-oauth/google";
+import { GoogleLogin } from "@react-oauth/google";
 
 const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
 
@@ -80,8 +80,6 @@ const Login = () => {
 };
 
   return (
-    <GoogleOAuthProvider clientId={process.env.REACT_APP_GOOGLE_CLIENT_ID}>
-      {/* Full screen center */}
       <div className="d-flex justify-content-center align-items-center vh-100 bg-light">
         <Card style={{ width: "22rem" }} className="p-3 shadow-sm">
           <Card.Body>
@@ -147,7 +145,6 @@ const Login = () => {
           </Card.Body>
         </Card>
       </div>
-    </GoogleOAuthProvider>
   );
 };
 
