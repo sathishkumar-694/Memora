@@ -25,7 +25,6 @@ const Login = () => {
       }
       const res = await axios.post(BACKEND_URL + "/auth/login", form);
       localStorage.setItem("token", res.data.token);
-      setToken(res.data.token);
       
       // Store role if present (admin)
       if (res.data.role) {
@@ -62,8 +61,7 @@ const Login = () => {
 
     // 2. Store your app JWT
     localStorage.setItem("token", response.data.token);
-    setToken(response.data.token);
-
+    
     // 3. Navigate after success
     navigate("/notes");
 

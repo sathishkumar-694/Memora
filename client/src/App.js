@@ -6,7 +6,6 @@ import Login from './pages/Login';
 import Profile from './pages/Profile';
 import Register from './pages/Register';
 import ProtectedRoute from './pages/protectedRoute';
-import Note from './components/Note';
 import Notes from './pages/Notes';
 import AdminDashboard from './pages/AdminDashboard';
 import AdminLogin from './pages/AdminLogin';
